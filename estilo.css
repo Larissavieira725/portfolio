@@ -13,17 +13,17 @@
 }
 /* Fundo Branco */
 :root[data-theme='light'] {
-    --cor-fundo: #c890ff;
-    --cor-texto: #ffffff;
-    --menu-link: #ffffff;
+    --cor-fundo: #ffffff;
+    --cor-texto: #000000;
+    --menu-link: #000000;
 
-    --cor-borda: #ffffff;
+    --cor-borda: #000000;
  
 }
 
 /* Inverter Cor LOGO = Filtro */
 html[data-theme='light'] .logo {
-    filter: invert(0);
+    filter: invert(1);
 }
 
 /* Reset CSS - padronizar */
