@@ -132,7 +132,7 @@ botao menu mobile  ----- */
     max-width: 320px;
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 8rem;
     transition: .3s ease-in-out;
     /* voltar aqui */
     transform: translateX(100%);
@@ -234,10 +234,21 @@ h1 {
     gap: 2rem;
 }
 
-.filmes-conteiner {
+.filmes-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+.filmes-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
 }
 
 /* Medidas Responsivas */
@@ -275,9 +286,20 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
     }
+}/* Fim min 768px */
+
+@media (min-width: 992px) {
+    .filmes-card {
+        flex-direction: row;
+    }
+    .img-card {
+        width: 35%;
+    }
+    .img-card2 {
+        width: 30%;
+    }
 }
 
-/* Fim min 768px */
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.5rem;
