@@ -251,6 +251,30 @@ h1 {
     border-radius: .5rem;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title {
+    color: ; /* Cor do texto */
+    font-size: ; /* Tamanho texto */
+    font-weight: ; /* Larguradas letras */
+    font-family: 'Times New Roman', Times, serif; /* Estilo das fontes */
+}
+
+
+
+
+
+
+
+
+
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
 
@@ -293,11 +317,20 @@ h1 {
         flex-direction: row;
     }
     .img-card {
-        width: 35%;
+         /* Tamanho das fotos */
+        width: 55%;
     }
+    .reverse-card{
+        /* Espelhar */
+        flex-direction: row-reverse;
+    }
+
+
+
     .img-card2 {
         width: 30%;
     }
+
 }
 
 @media (min-width: 1400px) {
