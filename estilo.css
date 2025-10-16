@@ -1,3 +1,6 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+
 /* CSS Externo */
 
 /* Definir as cores Tema Dark */
@@ -196,6 +199,23 @@ botao menu mobile  ----- */
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Caveat", cursive;
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.55rem;
+    font-family: "Shadows Into Light", cursive;font-weight: 900;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .video iframe {
@@ -259,13 +279,23 @@ h1 {
     gap: 1rem;
 }
 
-.card-title {
+.card-titulo {
     color: ; /* Cor do texto */
     font-size: ; /* Tamanho texto */
     font-weight: ; /* Larguradas letras */
-    font-family: 'Times New Roman', Times, serif; /* Estilo das fontes */
+    font-family: ; /* Estilo das fontes */
 }
 
+.card-descricao {
+
+}
+
+.card-lista {
+
+}
+.card-item {
+
+}
 
 
 
@@ -277,7 +307,7 @@ h1 {
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
-
+    
     .menu-desktop {
         display: flex;
         min-width: 30%; /* alinhar o logo */
@@ -296,9 +326,16 @@ h1 {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
     #home, 
     .filmes,
     .sobre {
@@ -333,9 +370,22 @@ h1 {
 
 }
 
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.5rem;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.25rem
     }
 
     .descricao-video,
