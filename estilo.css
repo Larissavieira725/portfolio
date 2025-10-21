@@ -1,3 +1,4 @@
+
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 
@@ -13,15 +14,19 @@
 
     --cor-borda: #ffffff;
 
+    --fundo-gradiente: linear-gradient(#000000,  #1e1e1e);
+
 }
 
 /* Fundo Branco */
 :root[data-theme='light'] {
-    --cor-fundo: #ffffff;
+    --cor-fundo: #b40000;
     --cor-texto: #000000;
     --menu-link: #000000;
 
     --cor-borda: #000000;
+
+    --fundo-gradiente: linear-gradient(#b40000, #890000, #6b0000, #080048, #080048,  #080048);
 
 }
 
@@ -40,7 +45,8 @@ html[data-theme='light'] .logo {
 
 
 body {
-    background: var(--cor-fundo);
+    background: var(--fundo-gradiente);
+    
     /* cor fundo */
     color: var(--cor-texto);
     /* cor TEXTOS */
@@ -232,7 +238,6 @@ h3 {
 .descricao-video {
     display: flex;
     flex-direction: column;
-    background: #700101;
     padding: 6.25rem 2rem 2rem;
     align-items: center;
     justify-content: flex-start;
@@ -279,33 +284,39 @@ h3 {
     gap: 1rem;
 }
 
+/* H3  */
 .card-titulo {
-    color: ; /* Cor do texto */
-    font-size: ; /* Tamanho texto */
-    font-weight: ; /* Larguradas letras */
-    font-family: ; /* Estilo das fontes */
+    color: var(--cor-texto);
+    /* Cor do Texto */
+    font-size: 2rem;
+    /* Tamanho texto */
+    font-weight: 400;
+    /* largura das letras */
+    font-family: "Inter", sans-serif;
+    /* Estilo das fontes */
+    
 }
 
 .card-descricao {
-
+    color: var(--cor-texto);
+    font-family: "Inter", sans-serif;
 }
 
-.card-lista {
-
-}
 .card-item {
-
+    margin-bottom: .8rem;
 }
 
-
-
-
-
-
-
-
+.card-item i {
+    margin-right: 8px;
+}
 
 /* Medidas Responsivas */
+@media (max-width: 768px) { 
+    #home {
+        padding-top: 8rem;
+    }
+}
+
 @media (min-width: 768px) {
     
     .menu-desktop {
