@@ -14,14 +14,14 @@
 
     --cor-borda: #ffffff;
 
-    --fundo-gradiente: linear-gradient(#000000,  #353535);
+    --fundo-gradiente: linear-gradient(#000000, #000000, #565656);
 
 }
 
 /* Fundo Branco */
 :root[data-theme='light'] {
     --cor-fundo: #b40000;
-    --cor-texto: #000000;
+    --cor-texto: #ffffff;
     --menu-link: #000000;
 
     --cor-borda: #000000;
@@ -43,10 +43,12 @@ html[data-theme='light'] .logo {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Suavizar o Movimento Da Barra De Rolagem */
+}
 
 body {
     background: var(--fundo-gradiente);
-    
     /* cor fundo */
     color: var(--cor-texto);
     /* cor TEXTOS */
