@@ -14,7 +14,7 @@
 
     --cor-borda: #ffffff;
 
-    --fundo-gradiente: linear-gradient(#000000, #000000, #565656);
+    --fundo-gradiente: linear-gradient(#000000, #000000, #363636);
 
     --cor-hover-icone: #720000;
 
@@ -366,7 +366,14 @@ h3 {
     color: #ff0000;
 }
 
+.col6 {
+    background: #00f2fa;
+}
 
+
+.col5 {
+    background: #ff66f2;
+}
 
 /* Medidas Responsivas */
 @media (max-width: 768px) { 
