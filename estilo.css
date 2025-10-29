@@ -366,13 +366,29 @@ h3 {
     color: #ff0000;
 }
 
-.col6 {
+.col1 {
     background: #00f2fa;
 }
 
 
-.col5 {
+.col2 {
     background: #ff66f2;
+}
+
+.col3 {
+    background: #9d42ff;
+}
+
+.col4 {
+    background: royalblue;
+}
+
+.col5 {
+    background: #ff3838;
+}
+
+.col6 {
+    background: #60ff48;
 }
 
 /* Medidas Responsivas */
