@@ -1,6 +1,7 @@
 
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
 
 /* CSS Externo */
 
@@ -225,7 +226,7 @@ h2 {
 
 h3 {
     font-size: 1.55rem;
-    font-family: "Shadows Into Light", cursive;font-weight: 900;
+   font-family: "Stint Ultra Condensed", serif;
     font-weight: bold;
     font-style: italic;
 }
@@ -255,7 +256,7 @@ h3 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-top: -2rem;
-    font-family: 'Times New Roman', Times, serif;
+   font-family: "Stint Ultra Condensed", serif;
     letter-spacing: 2px;
 }
 
