@@ -332,12 +332,12 @@ h3 {
 }
 
 .redes-sociais .instagram {
-    color: #ff8800;
+    color: #bf00ff;
     font-size: 1.4rem;
 }
 
 .redes-sociais .instagram:hover {
-    color: #ff34b1;
+    color: #fb22ba;
 }
 
 .redes-sociais .tiktok {
@@ -377,19 +377,19 @@ h3 {
 }
 
 .col3 {
-    background: #9d42ff;
+    background: #00f2fa;
 }
 
 .col4 {
-    background: royalblue;
+    background: #ff66f2;
 }
 
 .col5 {
-    background: #ff3838;
+    background: #00f2fa;
 }
 
 .col6 {
-    background: #60ff48;
+    background: #ff66f2;
 }
 
 /* Medidas Responsivas */
