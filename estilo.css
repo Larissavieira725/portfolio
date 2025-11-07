@@ -1,38 +1,24 @@
-
-/* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
-
 /* CSS Externo */
 
 /* Definir as cores Tema Dark */
 /* raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo: #000000;
+    --cor-fundo: #6516b5;
     --cor-texto: #ffffff;
     --menu-link: #ffffff;
 
     --cor-borda: #ffffff;
-
-    --fundo-gradiente: linear-gradient(#000000, #000000, #363636);
-
-    --cor-hover-icone: #720000;
-
+    
 }
-
 /* Fundo Branco */
 :root[data-theme='light'] {
-    --cor-fundo: #b40000;
+    --cor-fundo: #c890ff;
     --cor-texto: #ffffff;
     --menu-link: #ffffff;
 
     --cor-borda: #ffffff;
-
-    --fundo-gradiente: linear-gradient(#b40000, #890000, #6b0000, #080048, #080048,  #080048);
-
-     --cor-hover-icone: #000000;
-
+ 
 }
 
 /* Inverter Cor LOGO = Filtro */
@@ -42,32 +28,25 @@ html[data-theme='light'] .logo {
 
 /* Reset CSS - padronizar */
 /* Seletor Universal */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth; /* Suavizar o Movimento Da Barra De Rolagem */
-}
 
 body {
-    background: var(--fundo-gradiente);
-    /* cor fundo */
-    color: var(--cor-texto);
-    /* cor TEXTOS */
+    background: var(--cor-fundo); /* cor fundo */
+    color: var(--cor-texto); /* cor TEXTOS */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
-    color: var(--menu-link);
-    text-decoration: none;
+   color: var(--menu-link);
+   text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    /* Estilo de Lista */
+    list-style: none;  /* Estilo de Lista */
 }
 
 header {
@@ -76,12 +55,9 @@ header {
     align-items: center;
     width: 100%;
     background: var(--cor-fundo);
-    border-bottom: 2px solid var(--cor-borda);
+    border-bottom: 5px solid var(--cor-borda);
     position: fixed;
-    /* Voltar */
     z-index: 9999;
-    /* Camadas */
-    padding: .5rem 1rem;
 }
 
 .menu-desktop {
@@ -92,16 +68,14 @@ header {
 }
 
 /* NAV = UL // OL */
-.menu {
-    display: flex;
-    /* em linha // horizontal */
-    gap: 1rem;
-    /* 16px */
+.menu  {
+    display: flex; /* em linha // horizontal */
+    gap: 1rem; /* 16px */
     align-items: center;
 }
 
 /* LI = listas */
-.menu-item {
+.menu-item { 
     width: 100%;
 }
 
@@ -135,22 +109,19 @@ botao menu mobile  ----- */
     padding: 0.5rem;
 }
 
-.menu-mobile {
-    /* NAV */
+.menu-mobile {  /* NAV */
     position: fixed;
     top: 0;
     right: 0;
     background: var(--cor-fundo);
     width: 75%;
-    height: 100vh;
-    /* viewPort Altura */
+    height: 100vh; /* viewPort Altura */
     border-left: 1px solid var(--cor-borda);
     max-width: 320px;
     display: flex;
     flex-direction: column;
-    padding-top: 8rem;
-    transition: .3s ease-in-out;
-    /* voltar aqui */
+    padding-top: 4rem;
+    transition: .3s ease-in-out; /* voltar aqui */
     transform: translateX(100%);
 }
 
@@ -159,21 +130,16 @@ botao menu mobile  ----- */
     transform: translateX(0%);
 }
 
-.menu-mobile
-/* nav */
-.menu-list
-
-/* UL */
-    {
+.menu-mobile /* nav */
+.menu-list  /* UL */ {  
     display: flex;
-    flex-direction: column;
-    /* EIXO Y = Vertical */
+    flex-direction: column; /* EIXO Y = Vertical */
     gap: 1rem;
     width: 100%;
     padding: 1rem 1rem 2rem;
 }
 
-.menu-mobile .menu-item {
+.menu-mobile .menu-item  {
     width: 100%;
     text-align: center;
 }
@@ -185,10 +151,8 @@ botao menu mobile  ----- */
 }
 
 .logo {
-    width: 2.5rem;
-    /* comprimento */
-    height: auto;
-    /* altura */
+    width: 3.25rem; /* comprimento */
+    height: auto; /* altura */
 }
 
 .header-toggle {
@@ -197,293 +161,18 @@ botao menu mobile  ----- */
     align-items: center;
 }
 
-#home {
-    padding: 7.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-family: "Caveat", cursive;
-}
-
-h2 {
-    font-family: "Permanent Marker", cursive;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: 900;
-}
-
-h3 {
-    font-size: 1.55rem;
-   font-family: "Stint Ultra Condensed", serif;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.video iframe {
-    aspect-ratio: 16/9;
-}
-
-#home,
-.filmes,
-.sobre,
-.contato {
-    padding: 2.5rem 1rem;
-}
-
-.descricao-video {
-    display: flex;
-    flex-direction: column;
-    padding: 6.25rem 2rem 2rem;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    margin-top: -7.5rem;
-}
-
-.descricao-video h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-top: -2rem;
-   font-family: "Stint Ultra Condensed", serif;
-    letter-spacing: 2px;
-}
-
-.filmes {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.filmes-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.filmes-card {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.img-card {
-    width: 100%;
-    border-radius: .5rem;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-/* H3  */
-.card-titulo {
-    color: var(--cor-texto);
-    /* Cor do Texto */
-    font-size: 2rem;
-    /* Tamanho texto */
-    font-weight: 400;
-    /* largura das letras */
-    font-family: "Inter", sans-serif;
-    /* Estilo das fontes */
-    
-}
-
-.card-descricao {
-    color: var(--cor-texto);
-    font-family: "Inter", sans-serif;
-}
-
-.card-item {
-    margin-bottom: .8rem;
-}
-
-.card-item i {
-    margin-right: 8px;
-}
-
-.card-item i:hover { 
-    color: var(--cor-hover-icone);
-    transition: .1s ease-in-out;
-}
-
-.redes-sociais {
-    font-size: 1.4rem;
-}
-
-.redes-sociais i:hover {
-    color: var(--cor-hover-icone);
-    transition: .1s ease-in-out;
-}
-
-.redes-sociais .instagram {
-    color: #bf00ff;
-    font-size: 1.4rem;
-}
-
-.redes-sociais .instagram:hover {
-    color: #fb22ba;
-}
-
-.redes-sociais .tiktok {
-    color: #00f2fa;
-    font-size: 1.4rem;
-}
-
-.redes-sociais .tiktok:hover {
-    color: #b40000;
-}
-
-.redes-sociais .whatsapp {
-    color: #949494;
-    font-size: 1.4rem;
-}
-
-.redes-sociais .whatsapp:hover {
-    color: #00ff00;
-}
-
-.redes-sociais .youtube {
-    color: #ffffff;
-    font-size: 1.4rem;
-}
-
-.redes-sociais .youtube:hover {
-    color: #ff0000;
-}
-
-.col1 {
-    background: #00f2fa;
-}
-
-
-.col2 {
-    background: #ff66f2;
-}
-
-.col3 {
-    background: #00f2fa;
-}
-
-.col4 {
-    background: #ff66f2;
-}
-
-.col5 {
-    background: #00f2fa;
-}
-
-.col6 {
-    background: #ff66f2;
-}
 
 /* Medidas Responsivas */
-@media (max-width: 768px) { 
-    #home {
-        padding-top: 8rem;
-    }
-}
-
 @media (min-width: 768px) {
-    
+
     .menu-desktop {
         display: flex;
         min-width: 30%; /* alinhar o logo */
     }
-
     .btn-menu-mobile {
         display: none;
     }
-
     .header-toggle {
         min-width: 30%; /* alinhar o logo */
-    }
-
-    header {
-        padding: 1rem 6rem;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-    #home, 
-    .filmes,
-    .sobre {
-        padding: 8rem 6rem 4rem 6rem;
-    }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}/* Fim min 768px */
-
-@media (min-width: 992px) {
-    .filmes-card {
-        flex-direction: row;
-    }
-    .img-card {
-         /* Tamanho das fotos */
-        width: 55%;
-    }
-    .reverse-card{
-        /* Espelhar */
-        flex-direction: row-reverse;
-    }
-
-
-
-    .img-card2 {
-        width: 30%;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    h2 {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    h1 {
-        font-size: 6.5rem;
-    }
-    h2 {
-        font-size: 4.5rem;
-    }
-
-    h3 {
-        font-size: 3.25rem
-    }
-
-    .descricao-video,
-    .filmes,
-    .sobre {
-        padding: 10rem 15rem 4rem;
     }
 }
