@@ -1,4 +1,3 @@
-
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
@@ -29,9 +28,9 @@
 
     --cor-borda: #ffffff;
 
-    --fundo-gradiente: linear-gradient(#b40000, #890000, #6b0000, #080048, #080048,  #080048);
+    --fundo-gradiente: linear-gradient(#b40000, #890000, #6b0000, #080048, #080048, #080048);
 
-     --cor-hover-icone: #000000;
+    --cor-hover-icone: #000000;
 
 }
 
@@ -49,7 +48,9 @@ html[data-theme='light'] .logo {
 }
 
 html {
-    scroll-behavior: smooth; /* Suavizar o Movimento Da Barra De Rolagem */
+    scroll-behavior: smooth;
+    /* Suavizar o Movimento Da Barra De Rolagem */
+    font-size: 62.5%;
 }
 
 body {
@@ -112,7 +113,7 @@ header {
 
 .menu-text {
     color: var(--menu-link);
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
 }
 
@@ -185,7 +186,7 @@ botao menu mobile  ----- */
 }
 
 .logo {
-    width: 2.5rem;
+    width: 3.5rem;
     /* comprimento */
     height: auto;
     /* altura */
@@ -195,6 +196,7 @@ botao menu mobile  ----- */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 #home {
@@ -208,6 +210,7 @@ botao menu mobile  ----- */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-top: 2.5rem;
 }
 
 h1 {
@@ -226,7 +229,7 @@ h2 {
 
 h3 {
     font-size: 1.55rem;
-   font-family: "Stint Ultra Condensed", serif;
+    font-family: "Stint Ultra Condensed", serif;
     font-weight: bold;
     font-style: italic;
 }
@@ -256,7 +259,7 @@ h3 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-top: -2rem;
-   font-family: "Stint Ultra Condensed", serif;
+    font-family: "Stint Ultra Condensed", serif;
     letter-spacing: 2px;
 }
 
@@ -301,7 +304,7 @@ h3 {
     /* largura das letras */
     font-family: "Inter", sans-serif;
     /* Estilo das fontes */
-    
+
 }
 
 .card-descricao {
@@ -317,7 +320,7 @@ h3 {
     margin-right: 8px;
 }
 
-.card-item i:hover { 
+.card-item i:hover {
     color: var(--cor-hover-icone);
     transition: .1s ease-in-out;
 }
@@ -367,43 +370,47 @@ h3 {
     color: #ff0000;
 }
 
-.col1 {
-    background: #00f2fa;
+/* SOBRE */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* FOTO Retangular */
+.sobre-logo {
+    width: 100%;
+    /* aspect-ratio: 1 / 1; /* NAO PRECISA se for Quadrado */
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 4px solid #ffffff;
+}
+
+.sobre-descricao p {
+    text-align: justify;
+    font-size: 18px;
 }
 
 
-.col2 {
-    background: #ff66f2;
-}
 
-.col3 {
-    background: #00f2fa;
-}
 
-.col4 {
-    background: #ff66f2;
-}
 
-.col5 {
-    background: #00f2fa;
-}
 
-.col6 {
-    background: #ff66f2;
-}
 
 /* Medidas Responsivas */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     #home {
         padding-top: 8rem;
     }
 }
 
 @media (min-width: 768px) {
-    
+
     .menu-desktop {
         display: flex;
-        min-width: 30%; /* alinhar o logo */
+        min-width: 30%;
+        /* alinhar o logo */
     }
 
     .btn-menu-mobile {
@@ -411,7 +418,8 @@ h3 {
     }
 
     .header-toggle {
-        min-width: 30%; /* alinhar o logo */
+        min-width: 30%;
+        /* alinhar o logo */
     }
 
     header {
@@ -429,7 +437,8 @@ h3 {
     h3 {
         font-size: 2rem;
     }
-    #home, 
+
+    #home,
     .filmes,
     .sobre {
         padding: 8rem 6rem 4rem 6rem;
@@ -440,17 +449,21 @@ h3 {
         flex-direction: column;
         align-items: flex-start;
     }
-}/* Fim min 768px */
+}
+
+/* Fim min 768px */
 
 @media (min-width: 992px) {
     .filmes-card {
         flex-direction: row;
     }
+
     .img-card {
-         /* Tamanho das fotos */
+        /* Tamanho das fotos */
         width: 55%;
     }
-    .reverse-card{
+
+    .reverse-card {
         /* Espelhar */
         flex-direction: row-reverse;
     }
@@ -473,6 +486,7 @@ h3 {
     h1 {
         font-size: 6.5rem;
     }
+
     h2 {
         font-size: 4.5rem;
     }
